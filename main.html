@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css"> </link>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+		<script src="main.js"></script> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+	</head>
+	
+	<body>
+		<div class="navbar" id="n">
+		
+			<div class="navbarcontent" id="n">
+		  
+				<span class="navbtn"><img src="images/icons/family_icon.png"></img> Family</span>
+
+				<span class="navbtn"><img src="images/icons/girl_icon.png"></img>Ladies</span>
+
+				<span class="navbtn"><img src="images/icons/men_icon.png"></img>Men</span>
+
+				<span class="navbtn"><img src="images/icons/kid_icon.png"></img>Kids</span>
+
+				<span class="search">
+					<input id="search" type="text" placeholder="Search.." />
+					<img src="images/icons/search.svg" onclick="searchProducts()"/>
+				</span>
+			</div>	
+
+	    </div>
+
+		<label for="sorting">Sorting By:</label>
+		<select name="sorting" id="sorting" onChange="searchProducts()">
+			<option value="priceAscending" >Price Ascending</option>
+			<option value="priceDescending">Price Descending</option>
+        </select>
+
+
+		<div class="icon-bar">
+			<a class="active" href="#"><i class="fa fa-home"></i></a>
+			<a href="#"><i class="fa fa-search"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+			<a href="#"><i class="fa fa-globe"></i></a>
+			<a href="#"><i class="fa fa-trash"></i></a>
+		  </div>
+	   
+		<div class="content" id="content">
+			<!-- Here will dinamically add products from the API -->
+		</div>
+		
+		<div class="nextandpreviouspages" id="pg">
+
+		<a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a>
+		</div>
+
+		<div class="footer">&#169;  2024 Xinying</div>
+
+	</body>
+</html>
